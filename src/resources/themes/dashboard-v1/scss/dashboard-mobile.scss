@@ -1,0 +1,59 @@
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+
+}
+/* ================== Mobile -md Width ================== */
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .login-section {
+        h1, .h1 {
+            font-size: 35px;
+        }
+
+        .logo {
+            max-width: 250px;
+            margin-top: 10%;
+        }
+
+        .bg-doodles {
+            align-items: start;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .account-left-col {
+            align-items: start;
+        }
+
+        .bg-footer {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 0;
+            margin: 0 auto;
+        }
+
+        form.bg-white {
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        form .form-help {
+            text-align: center;
+        }
+    }
+
+}

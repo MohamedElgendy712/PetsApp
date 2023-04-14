@@ -1,0 +1,339 @@
+@import "bootstrap";
+
+@font-face {
+    font-family: 'SFRoundedRegular';
+    src: url('../fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SFRoundedBold';
+    src: url('../fonts/FontsFree-Net-SF-Pro-Rounded-Bold.ttf') format('truetype');
+}
+
+$primaryColor: #FD7D64;
+$primaryColorActive: #f8907e;
+
+$textGray: #888888;
+
+body {
+    min-height: 100vh;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===================== General ===================== */
+.flex-container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-screen-height {
+    height: 100vh;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.btn {
+    transition: all .4s ease;
+}
+
+.btn-primary {
+    background: $primaryColor;
+    outline-color: $primaryColor;
+    border-color: $primaryColor;
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background: $primaryColorActive;
+    outline-color: $primaryColorActive;
+    border-color: $primaryColorActive;
+}
+
+.link {
+    color: $primaryColor;
+    text-decoration: underline;
+}
+
+.link:hover, .link:focus, .link:active {
+    color: $primaryColorActive;
+}
+
+.flex-container-row {
+    flex-direction: row;
+}
+
+.flex-container-column {
+    flex-direction: column;
+}
+
+.btn-padded {
+    padding: 10px 50px 10px 50px;
+}
+
+.link-plain, .link-plain:hover, .link-plain:focus, .link-plain:active{
+    text-decoration: none;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-grey {
+    color: $textGray;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.email-link img {
+    margin-top: -4px;
+}
+
+.absolute-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+form .error {
+    color: red;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.bg-white {
+    background: white;
+}
+.ligth-black{
+    color: #5a5a5a;
+}
+/* ===================== Account Auth ===================== */
+.error-page {
+    background-color: #F95B50;
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+}
+
+.bg-doodles {
+    background-color: transparent;
+    background-image: url('../img/bg-doodles.png');
+    background-size: cover;
+    background-position: center center;
+
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+    flex-direction: column;
+}
+
+.login-section {
+    h1 {
+        font-family: 'SFRoundedBold';
+        font-size: 48px;
+    }
+    .form-help {
+        font-family: 'SFRoundedRegular';
+        font-size: 20px;
+        color: $textGray;
+    }
+
+    label {
+        font-family: 'SFRoundedBold';
+        font-size: 16px;
+    }
+
+    .account-left-col {
+        background-color: #F95B50;
+        background-size: cover;
+        background-position: center center;
+        padding: 0;
+    }
+
+    /* Logo */
+    .logo {
+        max-width: 400px;
+    }
+
+    /* Login form */
+    .login-form {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .bg-footer {
+        justify-content: space-between;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    .bg-footer p {
+        margin: 0;
+        padding: 10px;
+    }
+
+    form .form-help {
+        padding: 5px;
+    }
+}
+/* ===================== Dashboard ===================== */
+.dashboard-title{
+    font-size: 47px;
+}
+.dashboard-search{
+    width: 345px;
+}
+.category{
+    padding: 0 20px 8px 20px;
+    border-bottom: 1px solid #ebebeb;
+    cursor: pointer;
+}
+.selected-category{
+    color: $primaryColor !important;
+    border-bottom: 1px solid $primaryColor;
+}
+.pet-details{
+    max-width: 240px;
+}
+.table-category{
+    padding: 8px 14px;
+    background-color: #34C759;
+    border-radius: 100px;
+}
+.details-btn{
+    padding: 8px 16px;
+    color: #888;
+    background-color: #f5f5f5;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+}
+.drop-down{
+    padding: 8px;
+    background-color: #f5f5f5;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+}
+.prev-btn{
+    background-color: transparent;
+    padding: 8px 16px;
+    color: $primaryColor;
+    border: 1px solid #FED4CB;
+    border-radius: 6px;
+}
+.page-number-btn{
+    background-color: transparent;
+    padding: 8px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    color: #888;
+}
+/* ===================== Dashboard Header ===================== */
+.dashboard-header{
+    padding: 40px 35px;
+}
+.dashboard-logo{
+    flex-basis: 15%;
+}
+.fs-12{
+    font-size: 12px;
+}
+.bg-lightgray{
+    background-color: #F5F5F5;
+}
+
+/* ===================== Dashboard Sidebar ===================== */
+.dashboard-sidebar{
+    max-width: 280px;
+}
+
+.list-item{
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    .icon{
+        path{
+            transition: .3s;
+        }
+    }
+    p{
+        transition: .3s;
+    }
+}
+.list-item:hover{
+    background-color: $primaryColor;
+
+    p{
+        color: white;
+    }
+    .icon{
+       path{
+        fill: white;
+       }
+    }
+}
+.logout-item{
+    bottom: 50px;
+    cursor: pointer;
+    p{
+        color: #ff3b30;
+    }
+}
+/* ===================== Popup ===================== */
+.popup{
+    max-width: 539px;
+    margin: auto;
+    border-radius: 16px;
+    overflow: hidden;
+
+    .details-title{
+        font-size: 10px;
+    }
+
+    .carousel-indicators
+    {
+        width: fit-content;
+        margin: auto;
+        padding: 6px 8px;
+        background-color: #FFFFFF52;
+        border-radius: 21px;
+        margin-bottom: 10px;
+    }
+
+    .indicator{
+        width: 8px !important;
+        height: 4px !important;
+        border-radius: 19px; 
+        background-color: white !important;
+        border: none;
+        opacity: 1 !important;
+    }
+    .active{
+        background-color: $primaryColor !important;
+    }
+}
