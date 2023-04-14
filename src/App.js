@@ -19,8 +19,8 @@ function App() {
     //       </Routes>
     //   </BrowserRouter>
 
-    // <Home />
-    <PetPopup />
+    <Home />
+    // <PetPopup />
   );
 }
 

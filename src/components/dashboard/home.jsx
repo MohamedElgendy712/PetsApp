@@ -3,6 +3,7 @@ import LogoutButton from "./LogoutButton";
 import Dashboard from "./dashboard";
 import DashboardHeader from "./dashboardHeader";
 import DashboardSideBar from "./dashboardSideBar";
+import Products from './products'
 
 const Home = (props) => {
     const [firstName] = useLocalStorage("user_first_name", "")
@@ -12,7 +13,8 @@ const Home = (props) => {
             <DashboardHeader />
             <div className="d-flex flex-grow-1 flex-shrink-1">
                 <DashboardSideBar />
-                <Dashboard />
+                {/* <Dashboard /> */}
+                <Products/>
             </div>
         </section>
     )
